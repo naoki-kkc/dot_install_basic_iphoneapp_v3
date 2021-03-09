@@ -16,44 +16,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7EP-F6-PDd">
-                                <rect key="frame" x="45" y="272" width="300" height="300"/>
-                                <color key="backgroundColor" systemColor="linkColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="LSx-lR-wWH"/>
-                                    <constraint firstAttribute="width" constant="300" id="baO-64-fZw"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CtK-aU-oou">
-                                <rect key="frame" x="290" y="710" width="50" height="50"/>
-                                <color key="backgroundColor" systemColor="systemPinkColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="3eI-cs-mBb"/>
-                                    <constraint firstAttribute="width" constant="50" id="K2v-B3-wUi"/>
-                                </constraints>
-                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pgb-Mj-L29">
+                                <rect key="frame" x="168" y="407" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tap me!"/>
+                                <connections>
+                                    <segue destination="o1T-BI-4kd" kind="presentation" id="aMe-kM-zLS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="7EP-F6-PDd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5rU-za-Dk8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CtK-aU-oou" secondAttribute="trailing" constant="50" id="GQ6-0Q-fbj"/>
-                            <constraint firstItem="7EP-F6-PDd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gpF-hE-g60"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CtK-aU-oou" secondAttribute="bottom" constant="50" id="nbl-dL-63j"/>
-                            <constraint firstItem="7EP-F6-PDd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ov9-ZM-zF7"/>
-                            <constraint firstItem="7EP-F6-PDd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wXs-uy-dE0"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138.46153846153845" y="138.6255924170616"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="hXg-4h-BDX">
+            <objects>
+                <viewController id="o1T-BI-4kd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n1t-O6-dPL">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4mT-Bz-mng"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xzZ-ay-ozY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="989" y="139"/>
+        </scene>
     </scenes>
     <resources>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
